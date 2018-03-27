@@ -43,6 +43,15 @@ int main()
     //TODO: Place the piece and swap turns
     //Outline
     //1. When neither of the (above) if nor else if statements are true, then...
+    else 
+    {
+         board[row][column]=turn;
+    }
+    
+    if (turn == 'X')
+    {
+      turn='O';
+    }
     //1-A.  Assign the board location of row and column to the value of turn
     //1-B.  When turn has the value 'X', then...
     //1-B-1.  turn should be assigned the value 'O'
@@ -57,7 +66,14 @@ int main()
     //1-A-1.  Display the value of the board at location of r and c
     //1-A-2. Display a space
     //1-B. Display an newline to move to the next row of the board
-    
+    for (int r=0; r<ROWS; r++)
+    {
+      for (int c=0; c<COLUMNS; c++)
+      {
+      cout<<board[r][c]<<" ";
+      }
+        cout<<endl;
+    }
   }while( playing );
 
   cout<<"Goodbye!\n";
