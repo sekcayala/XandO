@@ -52,6 +52,10 @@ int main()
     {
       turn='O';
     }
+    else 
+    {
+    turn = 'X';
+    }
     //1-A.  Assign the board location of row and column to the value of turn
     //1-B.  When turn has the value 'X', then...
     //1-B-1.  turn should be assigned the value 'O'
